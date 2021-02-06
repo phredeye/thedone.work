@@ -1,3 +1,7 @@
+# ide generated
+.idea
+.vscode
+
 # package managers
 /node_modules
 /vendor

@@ -14,6 +14,7 @@ return [
     */
 
     'paths' => [
+        base_path('themes/fredisaacs/views'),
         resource_path('views'),
     ],
 
