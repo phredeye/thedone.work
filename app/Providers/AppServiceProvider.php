@@ -27,14 +27,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $this->app->bind(SettingsRepositoryInterface::class, function () {
-            $settings = new DbSettingsRepository();
-            $settings->loadAll();
-            return $settings;
-        });
 
-        if (!$this->app->runningInConsole()) {
-            View::share('settings', app()->get(SettingsRepositoryInterface::class));
-        }
     }
 }
