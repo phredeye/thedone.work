@@ -20,5 +20,5 @@ Homestead.json
 Homestead.yaml
 
 # submodules
-/modules
-!/modules/.gitkeep
+modules
+!modules/.gitkeep

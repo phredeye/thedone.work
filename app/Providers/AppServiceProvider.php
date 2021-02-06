@@ -2,9 +2,8 @@
 
 namespace App\Providers;
 
-use App\Contracts\SettingsInterface;
-use App\Support\Settings;
-use Illuminate\Contracts\Pagination\Paginator;
+use App\Contracts\SettingsRepositoryInterface;
+use App\Support\DbSettingsRepository;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,13 +26,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(!$this->app->runningInConsole()) {
-            $this->app->bind(SettingsInterface::class, function () {
-                $settings = new Settings();
-                return $settings;
-            });
 
-            View::share('settings', app()->get(SettingsInterface::class));
+        $this->app->bind(SettingsRepositoryInterface::class, function () {
+            $settings = new DbSettingsRepository();
+            $settings->loadAll();
+            return $settings;
+        });
+
+        if (!$this->app->runningInConsole()) {
+            View::share('settings', app()->get(SettingsRepositoryInterface::class));
         }
     }
 }

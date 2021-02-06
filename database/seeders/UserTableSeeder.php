@@ -59,5 +59,7 @@ class UserTableSeeder extends Seeder implements SeedsFakeData
         }
 
         $progress->finish();
+
+        $this->command->getOutput()->success('Users and Teams created.');
     }
 }

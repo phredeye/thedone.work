@@ -217,7 +217,7 @@ return [
         ],
     ],
 
-    'composer-output' => false,
+    'composer-output' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -228,7 +228,7 @@ return [
     |
     */
     'cache' => [
-        'enabled' => true,
+        'enabled' => false,
         'key' => 'laravel-modules',
         'lifetime' => 60,
     ],
