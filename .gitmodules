@@ -1,0 +1,3 @@
+[submodule "modules/ContentTypes"]
+	path = modules/ContentTypes
+	url = git@github.com:phredeye/contenttypes-module.git

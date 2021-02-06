@@ -1,0 +1,24 @@
+# package managers
+/node_modules
+/vendor
+npm-debug.log
+yarn-error.log
+
+# storage / public
+/public/hot
+/public/storage
+/storage/*.key
+
+# hidden / env
+.env
+.env.backup
+.phpunit.result.cache
+
+# misc
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+
+# submodules
+/modules
+!/modules/.gitkeep
