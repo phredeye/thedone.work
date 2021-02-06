@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.5",
         "mpociot/teamwork": "^6.1",
         "nwidart/laravel-modules": "^8.2",
+        "spatie/laravel-settings": "^1.0",
         "spatie/laravel-sluggable": "^2.6",
         "tymon/jwt-auth": "^1.0"
     },
