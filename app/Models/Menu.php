@@ -10,6 +10,8 @@ class Menu extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name'];
+
     public function items() : HasMany {
         return $this->hasMany(MenuItem::class);
     }

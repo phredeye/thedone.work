@@ -23,8 +23,8 @@ class CreateMenuTables extends Migration
             $table->id();
             $table->foreignId('menu_id')->references('id')->on('menus');
             $table->string('label');
-            $table->string('key');
-            $table->string('url');
+            $table->string('link');
+            $table->string('target')->nullable();
             $table->nestedSet();
             $table->timestamps();
         });
