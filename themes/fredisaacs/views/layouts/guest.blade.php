@@ -8,14 +8,16 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('apps/guest/app.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('app/app.css') }}">
 
     <!-- Scripts -->
-    <script src="{{ asset('apps/guest/app.js') }}" defer></script>
+    <script src="{{ asset('app/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
         <app-layout inline-template>
+            <template v-slot:title>{{ $site->title }}</template>
             {{ $slot }}
         </app-layout>
     </div>

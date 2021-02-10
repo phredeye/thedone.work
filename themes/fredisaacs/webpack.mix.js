@@ -19,6 +19,10 @@ mix.webpackConfig({
                             sassOptions: {
                                 indentedSyntax: true // optional
                             },
+                            options: {
+                                // This is the path to your variables
+                                additionalData: "@import '@/styles/variables.scss'"
+                            },
                         },
                     },
                 ]
@@ -37,7 +41,7 @@ const vueConfig = {
     globalStyles: 'css/global.css'
 }
 
-mix.js('js/guest/app.js', 'apps/guest').vue(vueConfig)
-    .js('js/client/app.js', 'apps/client').vue(vueConfig)
+mix.js('js/app.js', 'app')
+    .vue(vueConfig)
     .sourceMaps()
 
