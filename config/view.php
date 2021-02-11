@@ -2,6 +2,7 @@
 
 return [
 
+
     /*
     |--------------------------------------------------------------------------
     | View Storage Paths
@@ -14,8 +15,7 @@ return [
     */
 
     'paths' => [
-        base_path('themes/fredisaacs/views'),
-//        resource_path('views'),
+        resource_path('views'),
     ],
 
     /*
@@ -33,5 +33,6 @@ return [
         'VIEW_COMPILED_PATH',
         realpath(storage_path('framework/views'))
     ),
+
 
 ];
