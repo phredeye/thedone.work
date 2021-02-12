@@ -1,0 +1,50 @@
+/**
+ * Vuetify Variables
+ *
+ * DO NOT MOVE THIS FILE OR RENAME THIS DIRECTORY!!!
+ *
+ * Vuetify's config, looks specifically for this file, in this directory, and imports it.
+ * Use this to further customize Vuetify.
+ */
+
+/* Fonts  */
+$body-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$heading-font-family: 'Varela Round' !default;
+$font-size-root: 16px !default;
+$line-height-root: 1.5 !default;
+
+/* Borders */
+$border-radius-root: 4px !default;
+
+/* Elements */
+$blockquote-font-size: 18px !default;
+$blockquote-font-weight: 300 !default;
+
+$code-color: #bd4147 !default;
+$code-kbd-border-radius: 3px !default;
+$code-kbd-font-size: 85% !default;
+$code-kbd-font-weight: 900 !default;
+
+$input-top-spacing: 16px !default;
+$text-field-active-label-height: 12px !default;
+
+$btn-text-transform: none !default;
+
+/**
+ * Global App CSS
+ *
+ * Add CSS here sparingly! This CSS will affect all Vuetify apps globally.
+ */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+}
+h3 {
+    font-weight: normal;
+}
+
+/* Buttons */
+.v-btn {
+    box-shadow: none;
+}

@@ -1,4 +1,7 @@
 {
-    "/app/app.css": "/app/app.css",
-    "/app/app.js": "/app/app.js"
+    "/assets/app/main.js": "/assets/app/main.js",
+    "/assets/admin/main.js": "/assets/admin/main.js",
+    "/assets/app/layout-app-ui-components-app-AppNavbar-vue.js": "/assets/app/layout-app-ui-components-app-AppNavbar-vue.js",
+    "/assets/app/layout-app-ui-components-app-AppSidebar-vue.js": "/assets/app/layout-app-ui-components-app-AppSidebar-vue.js",
+    "/assets/app/layout-app-ui-layouts-default-vue.js": "/assets/app/layout-app-ui-layouts-default-vue.js"
 }
